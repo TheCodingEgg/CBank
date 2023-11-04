@@ -34,7 +34,7 @@ void LogIn(){
                         withdraw();
                         break;
                     case 3:
-                        
+                        Invest();
                     case 4:
                         printf("Goodbye!\n");
                         return;
