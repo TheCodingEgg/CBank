@@ -24,6 +24,7 @@ void LogIn(){
                 printf("1. Deposit\n");
                 printf("2. Withdraw\n");
                 printf("3. Quit\n");
+                printf("4. Invest\n");
                 scanf("%d", &choice);
                 switch (choice) {
                     case 1:
@@ -33,6 +34,8 @@ void LogIn(){
                         withdraw();
                         break;
                     case 3:
+                        
+                    case 4:
                         printf("Goodbye!\n");
                         return;
                     default:
