@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
-char string[300];
-int allowance = 1000;
-int string53;
+void Invest() {
+    char string[100];
+    int allowance = 0;
 
-int main() {
     while (1) {
         printf("Do you want to invest? ");
         scanf("%s", string);
@@ -15,6 +14,7 @@ int main() {
         if (strcmp(string, "yes") == 0) {
 
             printf("How much money do you want to invest? ");
+            int string53;
             scanf("%d", &string53);
 
             srand(time(NULL));
@@ -28,7 +28,7 @@ int main() {
                 printf("You Lost Money\n");
                 printf("You lost %d\n", string53);
                 printf("Your allowance is %d\n", changed2);
-                allowance = changed2; // Fixed the assignment of allowance
+                allowance = changed2; // Updated the assignment of allowance
             }
             if (randum2 == 1) {
                 int randnum = randum * 2;
@@ -36,9 +36,8 @@ int main() {
                 printf("You Earned Money\n");
                 printf("You earned %d\n", string53);
                 printf("Your Allowance is now %d\n", changed);
-                allowance = changed; // Fixed the assignment of allowance
+                allowance = changed; // Updated the assignment of allowance
             }
         }
     }
-    return 0;
 }
